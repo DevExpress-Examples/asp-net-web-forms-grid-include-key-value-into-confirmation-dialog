@@ -5,6 +5,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # How to include a deleted row KeyField value into the delete confirmation dialog
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e131/)**
+<!-- run online end -->
 
 
 <p>This demo demonstrates how to include the Delete link into a column's DataItemTemplate Container, and fetch information about the clicked row to the delete confirmation dialog</p><p><strong>See Also:</strong><br />
