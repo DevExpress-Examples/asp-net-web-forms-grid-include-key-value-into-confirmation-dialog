@@ -4,16 +4,18 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Grid View for ASP.NET Web Forms - How to include a deleted row key value into the delete confirmation dialog
+# Grid View for ASP.NET Web Forms - How to include a row key value into the delete confirmation dialog
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e131/)**
 <!-- run online end -->
+
+This example demonstrates how to include a row key value into the delete confirmation dialog.
 
 ![](grid-with-confirmation-dialog.png)
 
 ## Implementation Details
 
-In this example, DataItemTemplate contains a link. 
+In this example, [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) contains a link element. 
 
 ```aspx
 <dxwgv:GridViewDataTextColumn Name="Delete" >
