@@ -4,10 +4,14 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# # Grid View for ASP.NET Web Forms - How to include a deleted row key value into the delete confirmation dialog
+# Grid View for ASP.NET Web Forms - How to include a deleted row key value into the delete confirmation dialog
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e131/)**
 <!-- run online end -->
+
+![](grid-with-confirmation-dialog.png)
+
+## Implementation Details
 
 In this example, DataItemTemplate contains a link. 
 
@@ -27,13 +31,6 @@ function OnLinkClick(id, visibleIndex) {
         ASPxGridView1.DeleteRow(visibleIndex);
 }
 ```
-
-![](grid-with-confirmation-dialog.png)
-
-## Implementation Details
-
-<p>This demo demonstrates how to include the Delete link into a column's  Container, and fetch information about the clicked row to the delete confirmation dialog
-
 
 ## Files to Review
 
