@@ -21,6 +21,22 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <dxwgv:ASPxGridView ID="ASPxGridView1" runat="server" ClientInstanceName="ASPxGridView1"
+            AutoGenerateColumns="False" DataSourceID="AccessDataSource1" KeyFieldName="job_id"
+            Width="845px" OnRowDeleting="ASPxGridView1_RowDeleting">
+            <Columns>
+                <dxwgv:GridViewDataTextColumn FieldName="job_id" ReadOnly="True" />
+                <dxwgv:GridViewDataTextColumn FieldName="job_desc" />
+                <dxwgv:GridViewDataTextColumn FieldName="min_lvl" />
+                <dxwgv:GridViewDataTextColumn FieldName="max_lvl" />
+                <dxwgv:GridViewDataTextColumn Name="Delete" >
+                    <DataItemTemplate>
+                        <a id="DeleteButton" href="javascript:OnLinkClick(<%# Container.KeyValue.ToString()%>, <%# Container.VisibleIndex.ToString()%>);">
+                            Delete</a>
+                    </DataItemTemplate>
+                </dxwgv:GridViewDataTextColumn>
+            </Columns>
+        </dxwgv:ASPxGridView>
         <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/pubs.mdb"
             SelectCommand="SELECT * FROM [jobs]" DeleteCommand="DELETE FROM [jobs] WHERE [job_id] = ?"
             InsertCommand="INSERT INTO [jobs] ([job_id], [job_desc], [min_lvl], [max_lvl]) VALUES (?, ?, ?, ?)"
@@ -41,22 +57,6 @@
                 <asp:Parameter Name="max_lvl" Type="Byte" />
             </InsertParameters>
         </asp:AccessDataSource>
-        <dxwgv:ASPxGridView ID="ASPxGridView1" runat="server" ClientInstanceName="ASPxGridView1"
-            AutoGenerateColumns="False" DataSourceID="AccessDataSource1" KeyFieldName="job_id"
-            Width="845px" OnRowDeleting="ASPxGridView1_RowDeleting">
-            <Columns>
-                <dxwgv:GridViewDataTextColumn FieldName="job_id" ReadOnly="True" />
-                <dxwgv:GridViewDataTextColumn FieldName="job_desc" />
-                <dxwgv:GridViewDataTextColumn FieldName="min_lvl" />
-                <dxwgv:GridViewDataTextColumn FieldName="max_lvl" />
-                <dxwgv:GridViewDataTextColumn Name="Delete" >
-                    <DataItemTemplate>
-                        <a id="DeleteButton" href="javascript:OnLinkClick(<%# Container.KeyValue.ToString()%>, <%# Container.VisibleIndex.ToString()%>);">
-                            Delete</a>
-                    </DataItemTemplate>
-                </dxwgv:GridViewDataTextColumn>
-            </Columns>
-        </dxwgv:ASPxGridView>
     </div>
     </form>
 </body>
