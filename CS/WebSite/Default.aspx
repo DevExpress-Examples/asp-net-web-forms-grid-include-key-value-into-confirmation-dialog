@@ -45,15 +45,11 @@
             AutoGenerateColumns="False" DataSourceID="AccessDataSource1" KeyFieldName="job_id"
             Width="845px" OnRowDeleting="ASPxGridView1_RowDeleting">
             <Columns>
-                <dxwgv:GridViewDataTextColumn FieldName="job_id" ReadOnly="True" VisibleIndex="0">
-                </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="job_desc" VisibleIndex="1">
-                </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="min_lvl" VisibleIndex="2">
-                </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="max_lvl" VisibleIndex="3">
-                </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn Name="Delete" VisibleIndex="5">
+                <dxwgv:GridViewDataTextColumn FieldName="job_id" ReadOnly="True" />
+                <dxwgv:GridViewDataTextColumn FieldName="job_desc" />
+                <dxwgv:GridViewDataTextColumn FieldName="min_lvl" />
+                <dxwgv:GridViewDataTextColumn FieldName="max_lvl" />
+                <dxwgv:GridViewDataTextColumn Name="Delete" >
                     <DataItemTemplate>
                         <a id="DeleteButton" href="javascript:OnLinkClick(<%# Container.KeyValue.ToString()%>, <%# Container.VisibleIndex.ToString()%>);">
                             Delete</a>
