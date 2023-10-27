@@ -12,15 +12,9 @@ using DevExpress.Data.Filtering;
 using System.Collections;
 using System.IO;
 
-public partial class Customize_Confirm_Delete : System.Web.UI.Page 
-{
-    protected void Page_Load(object sender, EventArgs e)
-     {
-     }
-
+public partial class Customize_Confirm_Delete : System.Web.UI.Page {
     protected void ASPxGridView1_RowDeleting(object sender, DevExpress.Web.Data.ASPxDataDeletingEventArgs e) {
         throw new InvalidOperationException("Data modifications are not allowed in the online demo");
-
     }
 }
 
