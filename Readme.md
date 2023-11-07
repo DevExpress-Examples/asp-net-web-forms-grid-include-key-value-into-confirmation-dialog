@@ -6,7 +6,7 @@
 
 # Grid View for ASP.NET Web Forms - How to include a row key value into the delete confirmation dialog
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e131/)**
+**[[Run Online]](https://codecentral.devexpress.com/128541480/)**
 <!-- run online end -->
 
 This example demonstrates how to include a row key value in the delete confirmation dialog.
