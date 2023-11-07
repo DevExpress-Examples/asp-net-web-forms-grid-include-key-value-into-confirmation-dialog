@@ -8,7 +8,7 @@
 **[[Run Online]](https://codecentral.devexpress.com/e131/)**
 <!-- run online end -->
 
-This example demonstrates how to include a row key value into the delete confirmation dialog.
+This example demonstrates how to include a row key value in the delete confirmation dialog.
 
 ![](grid-with-confirmation-dialog.png)
 
